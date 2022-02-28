@@ -205,7 +205,8 @@
 .footer-team-name {
   font-size: 14px;
   text-align: center;
-  color: var(--cool-grey);
+  color: rgba(184, 184, 185, 1);
+  padding-top: 30px;
 }
 
 .footer {
@@ -213,11 +214,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid rgba(184, 184, 185, 1);;
+  padding-bottom: 45px;
+  box-sizing: content-box;
+  margin-top: 45px;
+  padding-top: 30px;
 }
 
 .footer-nav {
   list-style: none;
   text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .footer-nav-item a {
@@ -226,4 +235,8 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+.adalab-photo {
+  width: 116px;
+  height: 45px;
 }
