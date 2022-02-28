@@ -2,30 +2,45 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  
+  
 }
 :root {
   --blue-green: #099d8d;
   --black: #000000;
-  --cool-grey: #b8b8b9;
+  --cool-grey: rgba(184, 184, 185, 0.205);
   --aqua: #14d9c4;
+  --color-text: #54585a;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 .header {
-  background-color: var(--blue-green);
-  font-family: "Rubik";
+  height: 421px;
+  font-family: "Rubik", sans-serif;
   color: #ffffff;
 }
 .menu-nav {
   background-color: var(--aqua);
   opacity: 0.9;
 }
-body {
-  width: 320px;
-}
+
 .team-photo {
   width: 180px;
   height: 180px;
+  border: solid 5px var(--cool-grey);
+  border-radius: 4px;
+  
+
+}
+.team-members {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .name-group {
+  background-color: var(--blue-green);
   height: 60px;
   font-size: 16px;
   padding: 20px 60px;
@@ -33,6 +48,7 @@ body {
   text-align: center;
   font-weight: 500;
   opacity: 0.95;
+  z-index: 1;
 }
 
 .list-nav {
@@ -49,4 +65,120 @@ body {
   font-family: "Rubik";
   font-size: 15px;
   font-weight: 500;
+}
+.foto-cabecera {
+  position: absolute;
+ z-index: 0;
+ width: 100%;
+ transform: scale(3);
+
+}
+
+.lema {
+  position: absolute;
+  height: 80px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+ 
+}
+.wrap {
+  margin: 0 15px 0 15px;
+  width: 90%;
+  
+
+}
+.team {
+  position: relative;
+  top: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+align-items: center;
+}
+.team-title {
+  color: var(--aqua);
+  text-align: center;
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 30px;
+}
+.p-class {
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  
+}
+.sub-title {
+  text-align: center;
+  color: var(--blue-green);
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  height: 45px;
+}
+.about-us-title {
+  color: var(--blue-green);
+}
+.grey-background {
+  background-color: var(--cool-grey);
+  padding: 30px 0 15px 0;
+}
+.about-us {
+  position: relative;
+  top: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+align-items: center;
+}
+.names-members {
+  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.social-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 124px;
+  margin-bottom: 45px;
+  color: var(--blue-green);
+  
+
+
+}
+.social-icon {
+  margin-left: 20px;
+}
+.footer-team-name {
+  font-size: 14px;
+  text-align: center;
+  color: var(--cool-grey);
+
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav {
+  list-style: none;
+  text-align: center;
+
+}
+.footer-nav-item a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  
 }

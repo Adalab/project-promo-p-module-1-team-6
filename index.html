@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    
+    <!-- link email gema -->
+    <script src="https://kit.fontawesome.com/07310f17cd.js" crossorigin="anonymous"></script>
+    <!-- link email gema -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+
+
     <title>Proyecto Grupo 6</title>
 </head>
 
 <body>
     <!--     Esto es el header -->
     <header class="header">
+
+        <img class="foto-cabecera" src="./images/header-photo.jpg" alt="foto">
+
+
         <h1 class="name-group">The Walking Coders</h1>
         <nav class="menu-nav">
             <ul class="list-nav">
-                <li class="item-nav" ><a href="./index.html#team">Equipo</a></li>
-                <li class="item-nav" ><a href="./index.html#about-us">Quiénes somos</a></li>
+                <li class="item-nav"><a href="./index.html#team">Equipo</a></li>
+                <li class="item-nav"><a href="./index.html#about-us">Quiénes somos</a></li>
                 <li class="item-nav"><a href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
@@ -27,74 +37,108 @@
 
     <!-- Esto es el main-->
     <main>
-        <span>
-            <p>Lema</p>
-        </span>
-        <section>
-            <article>
-                <h2 id="team">Equipo</h2>
-                <p>Descripción Equipo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem nihil cumque sit magnam repudiandae suscipit excepturi impedit, dolorum est mollitia iusto voluptatum? Labore sapiente illo reiciendis at nam tenetur.</p>
+        <div class="wrap">
+            <span class="lema">
+                <p>Un gran código conlleva una gran responsabilidad.</p>
+            </span>
+        </div>
+
+        <section id="team" class="team">
+            <div class="wrap">
+
+                <article>
+                    <h2 class="team-title">Equipo</h2>
+                    <p class="p-class">Descripción Equipo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam exercitationem nihil cumque sit magnam repudiandae suscipit excepturi impedit, dolorum
+                        est mollitia iusto voluptatum? Labore sapiente illo reiciendis at nam tenetur.</p>
+                </article>
+            </div>
+
+            <article class="grey-background">
+                <div class="wrap">
+
+
+                    <h3 class="sub-title">Fortalezas</h3>
+                    <p class="p-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eius labore
+                        officia omnis odio, ipsa hic eos vitae totam praesentium voluptatem earum numquam tempore vel
+                        saepe minus? Nostrum, aperiam error.</p>
+                    <h3 class="sub-title">Debilidades</h3>
+                    <p class="p-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum
+                        animi voluptate ex velit, quis tempore facere iure nisi reiciendis eum, fuga porro dicta et
+                        eveniet accusantium deserunt maxime obcaecati!</p>
+                </div>
             </article>
-            <article>
-                <h3>Fortalezas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eius labore officia omnis odio, ipsa hic eos vitae totam praesentium voluptatem earum numquam tempore vel saepe minus? Nostrum, aperiam error.</p>
-                <h3>Debilidades</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum animi voluptate ex velit, quis tempore facere iure nisi reiciendis eum, fuga porro dicta et eveniet accusantium deserunt maxime obcaecati!</p>
-            </article>
+            </div>
         </section>
-        <section>
-            <h2 id="about-us">Quiénes somos</h2>
-            <article>
-                <img class="team-photo" src="./images/FOTO BRENDA ACTUALIZADA.jpg" alt="Foto Brenda">
-                <h4>Brenda Sánchez</h4>
-                <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quas quidem, placeat tenetur laudantium dicta temporibus aliquam error cumque corporis quia repudiandae sequi doloribus porro non, magni delectus rerum quis.</p>
-                <ul>
-                        <li>LinkedIn</li>
-                        <li>GitHub</li>
-                        <li>Mail</li>
-                </ul>
-            </article>
-            <article>
-                <img class="team-photo" src="./images/foto-gema.jpg" alt="Foto Gema">
-                <h4>Gema Mesas</h4>
-                <p>Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam quis voluptas repellendus sed libero consequuntur tempora temporibus delectus iusto debitis, eos perferendis accusamus quisquam voluptatem facere nulla! At, nam!</p>
-                <ul>
-                    <li>LinkedIn</li>
-                    <li>GitHub</li>
-                    <li>Mail</li>
-                </ul>
-            </article>
-            <article>
-                <img class="team-photo" src="./images/foto-noelia.jpg" alt="Foto de Noelia">
-                <h4>Noelia Romero</h4>
-                <p>Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam quis voluptas repellendus sed libero consequuntur tempora temporibus delectus iusto debitis, eos perferendis accusamus quisquam voluptatem facere nulla! At, nam! Me considero una persona creativa, muy empática y resiliente. Pasar mis días libres haciendo rutas por el bosque, siempre en compañia de mi perrete, es mi mayor hobbie.  </p>
-                <ul>
-                    <li>LinkedIn</li>
-                    <li>GitHub</li>
-                    <li>Mail</li>
-                </ul>
-            </article>
-            <article>
-                <img class="team-photo" src="./images/foto-tania.jpg" alt="Foto de Tania">
-                <h4>Tania Fernández</h4>
-                <p>Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam quis voluptas repellendus sed libero consequuntur tempora temporibus delectus iusto debitis, eos perferendis accusamus quisquam voluptatem facere nulla! At, nam!</p>
-                <ul>
-                    <li>LinkedIn</li>
-                    <li>GitHub</li>
-                    <li>Mail</li>
-                </ul>
-            </article>
+
+        <section id="about-us" class="about-us">
+            <div class="wrap">
+                <h2 class="about-us-title team-title">Quiénes somos</h2>
+                <article class="team-members">
+                    <img class="team-photo" src="./images/FOTO BRENDA ACTUALIZADA.jpg" alt="Foto Brenda">
+                    <h4 class="names-members">Brenda Sánchez</h4>
+                    <p class="p-class">Descripción: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quas
+                        quidem, placeat tenetur laudantium dicta temporibus aliquam error cumque corporis quia
+                        repudiandae sequi doloribus porro non, magni delectus rerum quis.</p>
+                    <ul class="social-nav">
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li>·<i class="fa-brands fa-github-alt social-icon"></i></li>
+                        <li>·<i class="fa-solid fa-envelope social-icon"></i></li>
+                    </ul>
+                </article>
+                <article class="team-members">
+                    <img class="team-photo" src="./images/foto-gema.jpg" alt="Foto Gema">
+                    <h4 class="names-members">Gema Mesas</h4>
+                    <p class="p-class">Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                        quibusdam quis voluptas repellendus sed libero consequuntur tempora temporibus delectus iusto
+                        debitis, eos perferendis accusamus quisquam voluptatem facere nulla! At, nam!</p>
+                    <ul class="social-nav">
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li>·<i class="fa-brands fa-github-alt social-icon"></i></li>
+                        <li>·<i class="fa-solid fa-envelope social-icon"></i></li>
+                    </ul>
+                </article>
+                <article class="team-members">
+                    <img class="team-photo" src="./images/foto-noelia.jpg" alt="Foto de Noelia">
+                    <h4 class="names-members">Noelia Romero</h4>
+                    <p class="p-class">Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                        quibusdam quis voluptas repellendus sed libero consequuntur tempora temporibus delectus iusto
+                        debitis, eos perferendis accusamus quisquam voluptatem facere nulla! At, nam! Me considero una
+                        persona creativa, muy empática y resiliente. Pasar mis días libres haciendo rutas por el bosque,
+                        siempre en compañia de mi perrete, es mi mayor hobbie. </p>
+                    <ul class="social-nav">
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li>·<i class="fa-brands fa-github-alt social-icon"></i></li>
+                        <li>·<i class="fa-solid fa-envelope social-icon"></i></li>
+                    </ul>
+
+                </article>
+
+                <article class="team-members">
+                    <img class="team-photo" src="./images/foto-tania.jpg" alt="Foto de Tania">
+                    <h4 class="names-members">Tania Fernández</h4>
+                    <p class="p-class">Descripción: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                        quibusdam quis voluptas repellendus sed libero consequuntur tempora temporibus delectus iusto
+                        debitis, eos perferendis accusamus quisquam voluptatem facere nulla! At, nam!</p>
+                    <ul class="social-nav">
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li>·<i class="fa-brands fa-github-alt social-icon"></i></li>
+                        <li>·<i class="fa-solid fa-envelope social-icon"></i></li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
     <!-- Esto es el footer -->
-    <footer>
-        <p>The Walking Coders &#169 2022</p>
-        <ul>
-            <li><a href="./index.html#team">EQUIPO</a></li>
-            <li><a href="./index.html#about-us">QUIÉNES SOMOS</a></li>
-            <li><a href="./contact.html">CONTACTO</a></li>
+    <footer class="footer">
+        <p class="footer-team-name">The Walking Coders &#169 2022</p>
+        <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="./index.html#team">EQUIPO</a></li>
+            <li class="footer-nav-item"><a href="./index.html#about-us">QUIÉNES SOMOS</a></li>
+            <li class="footer-nav-item"><a href="./contact.html">CONTACTO</a></li>
         </ul>
         <img src="" alt="Logo de Adalab">
     </footer>
 </body>
+
 </html>
