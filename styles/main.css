@@ -202,6 +202,11 @@
   margin-left: 20px;
 }
 
+.social-nav-link {
+  text-decoration: none;
+  color: var(--blue-green);
+}
+
 /* FOOTER */
 
 .footer-team-name {
