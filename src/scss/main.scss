@@ -1,259 +1,32 @@
-// @import 'core/variables';
-// @import 'core/reset';
-// @import 'components/code';
-// @import 'components/links';
-// @import 'layout/page';
-// @import 'layout/header';
-// @import 'layout/footer';
-// @import 'pages/index';
+@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/header';
+@import 'layout/main-about-us';
+@import 'layout/main-section';
+@import 'layout/main-team';
+@import 'layout/footer';
+@import 'pages/index';
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
+
   /* GLOBAL */
   
-  :root {
-    --blue-green: #099d8d;
-    --black: #000000;
-    --cool-grey: rgba(184, 184, 185, 0.205);
-    --aqua: #14d9c4;
-    --color-text: #54585a;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  .wrap {
-    margin: 0 15px 0 15px;
-    width: 90%;
-  }
-  
+
   /* HEADER */
-  
-  .header {
-    height: 421px;
-    font-family: "Rubik", sans-serif;
-    color: #ffffff;
-    overflow: hidden;
-    background-image: url(../images/header-img.jpg);
-    background-size: cover;
-    background-position-y: 25%;
-  }
-  
-  .name-group {
-    background-color: var(--blue-green);
-    height: 60px;
-    font-size: 16px;
-    padding: 20px 60px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    opacity: 0.95;
-    z-index: 1;
-  }
-  
-  .menu-nav {
-    background-color: var(--aqua);
-    opacity: 0.9;
-  }
-  
-  .list-nav {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 45px;
-  }
-  
-  .item-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Rubik";
-    font-size: 15px;
-    font-weight: 500;
-  }
-  
-  /*
-  .foto-cabecera {
-    position: absolute;
-    width: 100%;
-    height: auto;
-  }
-  */
+ 
+
   
   /* MAIN */
   
-  .lema {
-    position: absolute;
-    height: 80px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-    transform: translateY(-50%);
-    background-color: #ffffff;
-    margin: 0 15px;
-    padding: 5px;
-  }
-  
+
   /* Team Section */
-  
-  .team {
-    position: relative;
-    top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .team-title {
-    color: var(--aqua);
-    text-align: center;
-    font-size: 24px;
-    font-family: "Rubik", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 30px;
-  }
-  
-  .p-class {
-    color: var(--color-text);
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 30px;
-  }
-  
-  .sub-title {
-    text-align: center;
-    color: var(--blue-green);
-    font-family: "Rubik", sans-serif;
-    font-size: 22px;
-    height: 45px;
-  }
-  
-  .about-us-title {
-    color: var(--blue-green);
-  }
-  
-  .grey-background {
-    background-color: var(--cool-grey);
-    padding: 30px 0 15px 0;
-  }
-  
-  /* Cube */
-  
-  .diamond-container {
-    width: 100%;
-    max-height: 0px;
-  
-    position: relative;
-    top: -45px;
-  
-    display: flex;
-    justify-content: center;
-  }
-  
-  .diamond {
-    width: 30px;
-    height: 30px;
-    z-index: 10;
-    transform: rotate(45deg);
-    background-color: #ffffff;
-  }
+
   
   /* End of cube */
   
   /* About Us Section */
-  
-  .about-us {
-    position: relative;
-    top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .team-members {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .team-photo {
-    width: 180px;
-    height: 180px;
-    border: solid 5px var(--cool-grey);
-    border-radius: 4px;
-  }
-  
-  .names-members {
-    font-size: 20px;
-    text-align: center;
-    line-height: 45px;
-  }
-  
-  .social-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 124px;
-    margin-bottom: 45px;
-    color: var(--blue-green);
-  }
-  
-  .social-icon {
-    margin-left: 20px;
-  }
-  
-  .social-nav-link {
-    text-decoration: none;
-    color: var(--blue-green);
-  }
-  
+
   /* FOOTER */
   
-  .footer-team-name {
-    font-size: 14px;
-    text-align: center;
-    color: rgba(184, 184, 185, 1);
-    padding-top: 30px;
-  }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(184, 184, 185, 1);
-    padding-bottom: 45px;
-    box-sizing: content-box;
-    margin-top: 45px;
-    padding-top: 30px;
-  }
-  
-  .footer-nav {
-    list-style: none;
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  
-  .footer-nav-item a {
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-  .adalab-photo {
-    width: 116px;
-    height: 45px;
-  }
-  
+ 

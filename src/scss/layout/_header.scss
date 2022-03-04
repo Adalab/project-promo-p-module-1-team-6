@@ -1,5 +1,47 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-}
+  
+  
+  /////
+  .header {
+    height: 421px;
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+    background-image: url(../images/header-img.jpg);
+    background-size: cover;
+    background-position-y: 25%;
+  }
+  
+  .name-group {
+    background-color: $blue-green;
+    height: 60px;
+    font-size: 16px;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0.95;
+    z-index: 1;
+  }
+  
+  .menu-nav {
+    background-color: $aqua;
+    opacity: 0.9;
+  }
+  
+  .list-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+  }
+  
+  .item-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Rubik";
+    font-size: 15px;
+    font-weight: 500;
+  }
+  

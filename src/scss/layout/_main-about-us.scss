@@ -1,0 +1,48 @@
+ 
+  .about-us {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-photo {
+    width: 180px;
+    height: 180px;
+    border: solid 5px $cool-grey;
+    border-radius: 4px;
+  }
+  
+  .names-members {
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+  .social-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 124px;
+    margin-bottom: 45px;
+    color: $blue-green;
+  }
+  
+  .social-icon {
+    margin-left: 20px;
+  }
+  
+  .social-nav-link {
+    text-decoration: none;
+    color: $blue-green;
+  }
