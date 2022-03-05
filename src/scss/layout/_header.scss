@@ -1,17 +1,28 @@
-  
-  
-  /////
-  .header {
-    height: 421px;
-    font-family: "Rubik", sans-serif;
-    color: #ffffff;
-    overflow: hidden;
-    background-image: url(../images/header-img.jpg);
-    background-size: cover;
-    background-position-y: 25%;
-  }
-  
-  .name-group {
+/////
+.header {
+  height: 421px;
+  font-family: $fontText;
+  color: $textHeader;
+  overflow: hidden;
+  background-image: $headerImage;
+  background-size: cover;
+  background-position-y: 25%;
+}
+/*
+.name-group {
+  background-color: $blue-green;
+  height: 60px;
+  font-size: 16px;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  opacity: 0.95;
+  z-index: 1;
+}
+Sustituido por BEM abajo*/
+.header {
+  &__name-group {
     background-color: $blue-green;
     height: 60px;
     font-size: 16px;
@@ -22,12 +33,11 @@
     opacity: 0.95;
     z-index: 1;
   }
-  
-  .menu-nav {
-    background-color: $aqua;
-    opacity: 0.9;
-  }
-  
+}
+.menu-nav {
+  background-color: $aqua;
+  opacity: 0.9;
+
   .list-nav {
     list-style: none;
     display: flex;
@@ -35,13 +45,34 @@
     align-items: center;
     height: 45px;
   }
-  
-  .item-nav a {
+}
+/* Realizada anidación .list-nav arriba
+.list-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+}
+*/
+
+/*
+.item-nav a {
+  text-decoration: none;
+  color: $textHeader;
+  text-transform: uppercase;
+  font-family: $fontText;
+  font-size: 15px;
+  font-weight: 500;
+} 
+Sustituido abajo por variables y anidaciones .item-nav a*/
+.item-nav {
+  a {
     text-decoration: none;
-    color: #ffffff;
+    color: $textHeader;
     text-transform: uppercase;
-    font-family: "Rubik";
+    font-family: $fontText;
     font-size: 15px;
     font-weight: 500;
   }
-  
+}
