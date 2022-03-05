@@ -80,12 +80,38 @@
       margin: 30px;
     }
 
-    &p_class {
+    &p-class {
       color: $color-text;
       text-align: center;
       line-height: 1.5;
       margin-bottom: 30px; 
       }
+}
+
+.wrap {
+    &__sub-title {
+      text-align: center;
+      color: $blue-green;
+      font-family: "Rubik", sans-serif;
+      font-size: 22px;
+      height: 45px;
+    }
+
+    &__p-class {
+      color: $color-text;
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 30px; 
+      }
+  }
+
+ .about-us-title {
+  color: $blue-green;
+}
+
+.grey-background {
+  background-color: $cool-grey;
+  padding: 30px 0 15px 0;
 }
 
 .diamond-container {
