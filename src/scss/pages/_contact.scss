@@ -1,12 +1,12 @@
 .contact {
   &__title {
-      color: $blue-green;
-      text-align: center;
-      font-size: 24px;
-      font-family: "Rubik", sans-serif;
-      text-transform: uppercase;
-      font-weight: 500;
-      margin: 30px;
+    color: $blue-green;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 30px;
   }
 
   &__description {
@@ -16,43 +16,48 @@
     margin-bottom: 30px;
   }
   &__warning {
-      font-size: 12px;
+    font-size: 12px;
     color: $color-text;
     text-align: center;
     line-height: 1.5;
     margin-bottom: 30px;
 
     &-star {
-color: $aqua;
+      color: $aqua;
     }
   }
   &__input {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      font-size: 14px;
-      color: $color-text;
-      line-height: 1.5;
-    
-      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+    color: $color-text;
+    line-height: 1.5;
 
-      &-box {
-    width: 100%;
-    margin-top: 3.5px;
-    margin-bottom: 3.5px;
-    height: 45px;
-    border: 1px solid #b8b8b9;
-    
+    &-box {
+      width: 100%;
+      margin-top: 3.5px;
+      margin-bottom: 3.5px;
+      height: 45px;
+      border: 1px solid #b8b8b9;
+    }
+    &-bigbox {
+      width: 100%;
+      margin-top: 3.5px;
+      margin-bottom: 3.5px;
+      height: 105px;
 
-      }
-      &-bigbox {
-        width: 100%;
-        margin-top: 3.5px;
-        margin-bottom: 3.5px;
-        height: 105px;
-
-        border: 1px solid #b8b8b9;
-      }
+      border: 1px solid #b8b8b9;
+    }
   }
+}
+
+.button {
+  background-color: $blue-green;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  appearance: none;
 }
