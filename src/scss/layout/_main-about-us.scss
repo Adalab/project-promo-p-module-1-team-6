@@ -1,4 +1,7 @@
- 
+  .about-us__title {
+    color: $blue-green;
+  }
+  
   .about-us {
     position: relative;
     top: 40px;
@@ -6,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     &__member {
       display: flex;
       flex-direction: column;

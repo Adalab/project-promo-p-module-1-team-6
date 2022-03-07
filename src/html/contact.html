@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header class="header">
         <h1 class="header__name-group">The Walking Coders</h1>
@@ -17,46 +19,51 @@
                 <li class="item-nav"><a href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
-      </header>
+    </header>
 
 
 
 
-      <main>   
-    <fieldset>
-    <h1 class="contact-title">Contacto</h1>
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat sequi facere aliquid, illum dolores aut necessitatibus deserunt incidunt! Velit itaque obcaecati distinctio consequatur expedita, explicabo quasi modi odit maiores!.</p>
+    <main>
 
-    <p class="text">Todos los campos marcados con * son obligatorios.</p>
-    </fieldset>
 
-    <fieldset class="title">
-        <div class="title__subtitles">
-            <label for="nombre completo">Nombre completo</label>
-            <input placeholder="Nombre..." id="nombre completo" type="text" name="nombre completo" required/>
-        </div>
-        <div class="title__subtitles">
-            <label for="email">Email</label>
-            <input placeholder="nombre.apellido@mail.com" id="email" type="email" name="email" required/> 
-        </div>
+        <h2 class="contact-title">Contacto</h2>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat sequi facere
+            aliquid, illum dolores aut necessitatibus deserunt incidunt! Velit itaque obcaecati distinctio consequatur
+            expedita, explicabo quasi modi odit maiores!.</p>
 
-        <div class="title__subtitles">
-            <label for="teléfono">Teléfono</label>
-            <input placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono" required/>
-        </div>
+        <p class="text">Todos los campos marcados con * son obligatorios.</p>
 
-        <div class="title__subtitles"> 
-            <label for="mensajes">Mensajes:</label>
-            <textarea id="mensajes" name="mensajes" placeholder="¿Qué necesitas?" rows="8" cols="80"></textarea>
-        </div>
-    </fieldset>
+        <form action="https://adalab-server-form.herokuapp.com/" method="post">
 
-    <fieldset>
-        <div class="buttom">
-            <input type="submit" value="Enviar" />
-            </div>
-    </fieldset>
 
+            
+                <div class="title__subtitles">
+                    <label for="nombre completo">Nombre completo</label>
+                    <input placeholder="Nombre..." id="nombre completo" type="text" name="nombre completo" required />
+                </div>
+                <div class="title__subtitles">
+                    <label for="email">Email</label>
+                    <input placeholder="nombre.apellido@mail.com" id="email" type="email" name="email" required />
+                </div>
+
+                <div class="title__subtitles">
+                    <label for="teléfono">Teléfono</label>
+                    <input placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono" required />
+                </div>
+
+                <div class="title__subtitles">
+                    <label for="mensajes">Mensajes:</label>
+                    <textarea id="mensajes" name="mensajes" placeholder="¿Qué necesitas?" rows="8" cols="80"></textarea>
+                </div>
+            
+
+            
+                <div class="buttom">
+                    <input type="submit" value="Enviar" />
+                </div>
+            
+        </form>
     </main>
 
 
@@ -71,4 +78,5 @@
         <img class="footer__adalab-photo" src="./assets/images/logo-adalab.png" alt="Logo de Adalab">
     </footer>
 </body>
+
 </html>
