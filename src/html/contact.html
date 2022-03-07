@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Contacto</title>
 </head>
@@ -24,37 +26,38 @@
 
 
 
-    <main>
+    <main class="contact">
 
-
-        <h2 class="contact-title">Contacto</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat sequi facere
+<div class="wrap">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat sequi facere
             aliquid, illum dolores aut necessitatibus deserunt incidunt! Velit itaque obcaecati distinctio consequatur
             expedita, explicabo quasi modi odit maiores!.</p>
 
-        <p class="text">Todos los campos marcados con * son obligatorios.</p>
+        <p class="contact__warning">Todos los campos marcados con <span class="contact__warning-star">*</span> son obligatorios.</p>
+    </div>
 
         <form action="https://adalab-server-form.herokuapp.com/" method="post">
 
 
             
-                <div class="title__subtitles">
-                    <label for="nombre completo">Nombre completo</label>
-                    <input placeholder="Nombre..." id="nombre completo" type="text" name="nombre completo" required />
+                <div class="contact__input wrap">
+                    <label for="nombre completo">Nombre completo <span class="contact__warning-star">*</span></label>
+                    <input class="contact__input-box" placeholder="Nombre..." id="nombre completo" type="text" name="nombre completo" required />
                 </div>
-                <div class="title__subtitles">
-                    <label for="email">Email</label>
-                    <input placeholder="nombre.apellido@mail.com" id="email" type="email" name="email" required />
+                <div class="contact__input wrap">
+                    <label for="email">Email <span class="contact__warning-star">*</span></label>
+                    <input class="contact__input-box" placeholder="nombre.apellido@mail.com" id="email" type="email" name="email" required />
                 </div>
 
-                <div class="title__subtitles">
+                <div class="contact__input wrap">
                     <label for="teléfono">Teléfono</label>
-                    <input placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono" required />
+                    <input class="contact__input-box" placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono" required />
                 </div>
 
-                <div class="title__subtitles">
-                    <label for="mensajes">Mensajes:</label>
-                    <textarea id="mensajes" name="mensajes" placeholder="¿Qué necesitas?" rows="8" cols="80"></textarea>
+                <div class="contact__input wrap">
+                    <label for="mensajes">Mensaje: <span class="contact__warning-star">*</span></label>
+                    <textarea class="contact__input-bigbox" id="mensajes" name="mensajes" placeholder="¿Qué necesitas?" rows="8" cols="80"></textarea>
                 </div>
             
 
