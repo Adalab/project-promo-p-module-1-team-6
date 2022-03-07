@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
     <title>Contacto</title>
 </head>
 <body>
@@ -23,20 +24,37 @@
 
       <main>   
     <fieldset>
-    <h1>Contacto</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quis aliquid dolorem veritatis mollitia natus vitae asperiores earum consectetur dolorum eum, error, eos amet! Rem totam deleniti dignissimos veritatis excepturi.</p>
+    <h1 class="principal-title">Contacto</h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat sequi facere aliquid, illum dolores aut necessitatibus deserunt incidunt! Velit itaque obcaecati distinctio consequatur expedita, explicabo quasi modi odit maiores!.</p>
 
-    <p>Todos los campos marcados con * son obligatorios.</p>
+    <p class="text">Todos los campos marcados con * son obligatorios.</p>
+    </fieldset>
+
+    <fieldset class="title">
+        <div class="title__subtitles">
+            <label for="nombre completo">Nombre completo</label>
+            <input placeholder="Nombre..." id="nombre completo" type="text" name="nombre completo" required/>
+        </div>
+        <div class="title__subtitles">
+            <label for="email">Email</label>
+            <input placeholder="nombre.apellido@mail.com" id="email" type="email" name="email" required/> 
+        </div>
+
+        <div class="title__subtitles">
+            <label for="teléfono">Teléfono</label>
+            <input placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono" required/>
+        </div>
+
+        <div class="title__subtitles"> 
+            <label for="mensajes">Mensajes:</label>
+            <textarea id="mensajes" name="mensajes" placeholder="¿Qué necesitas?" rows="8" cols="80"></textarea>
+        </div>
     </fieldset>
 
     <fieldset>
-        Nombre completo*
-        Email*
-        Teléfono
-        Mensaje*
-    </fieldset>
-    <fieldset>
-        botón
+        <div class="buttom">
+            <input type="submit" value="Enviar" />
+            </div>
     </fieldset>
 
     </main>
