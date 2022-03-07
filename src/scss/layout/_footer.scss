@@ -1,40 +1,39 @@
- 
-  .footer-team-name {
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(184, 184, 185, 1);
+  padding-bottom: 45px;
+  box-sizing: content-box;
+  margin-top: 45px;
+  padding-top: 30px;
+
+  &__team-name {
     font-size: 14px;
     text-align: center;
     color: rgba(184, 184, 185, 1);
     padding-top: 30px;
   }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(184, 184, 185, 1);
-    padding-bottom: 45px;
-    box-sizing: content-box;
-    margin-top: 45px;
-    padding-top: 30px;
-  }
-  
-  .footer-nav {
+
+  &__nav {
     list-style: none;
     text-align: center;
     padding: 30px;
     font-size: 14px;
     font-weight: 600;
+
+    &__item a {
+      text-decoration: none;
+      color: $color-text;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
   }
   
-  .footer-nav-item a {
-    text-decoration: none;
-    color: $color-text;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-  .adalab-photo {
+  &__adalab-photo {
     width: 116px;
     height: 45px;
   }
-  
+}
