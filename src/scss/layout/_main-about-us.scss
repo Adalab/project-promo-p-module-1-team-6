@@ -1,14 +1,19 @@
-  .about-us__title {
-    color: $blue-green;
-  }
-  
-  .about-us {
+    .about-us {
     position: relative;
     top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &__title {
+      color: $blue-green;
+      text-align: center;
+      font-size: 24px;
+      font-family: "Rubik", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 30px;
+    }
     &__member {
       display: flex;
       flex-direction: column;
