@@ -6,4 +6,10 @@
 .wrap {
   margin: 0 15px 0 15px;
   width: 90%;
+  @media all and (min-width: 768px) {
+    margin: 0 45px 0 45px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 0 138px 0 138px;
+  }
 }
