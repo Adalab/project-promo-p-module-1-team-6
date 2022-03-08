@@ -1,4 +1,3 @@
-/////
 .header {
   height: 421px;
   font-family: $fontText;
@@ -8,24 +7,13 @@
   background-size: cover;
   background-position-y: 25%;
 }
-/*
-.name-group {
-  background-color: $blue-green;
-  height: 60px;
-  font-size: 16px;
-  padding: 20px 60px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 500;
-  opacity: 0.95;
-  z-index: 1;
-}
-Sustituido por BEM abajo*/
+
 .header {
   &__name-group {
     background-color: $blue-green;
     height: 60px;
     font-size: 16px;
+    line-height: 30px;
     padding: 20px 60px;
     text-transform: uppercase;
     text-align: center;
@@ -46,26 +34,7 @@ Sustituido por BEM abajo*/
     height: 45px;
   }
 }
-/* Realizada anidación .list-nav arriba
-.list-nav {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 45px;
-}
-*/
 
-/*
-.item-nav a {
-  text-decoration: none;
-  color: $textHeader;
-  text-transform: uppercase;
-  font-family: $fontText;
-  font-size: 15px;
-  font-weight: 500;
-} 
-Sustituido abajo por variables y anidaciones .item-nav a*/
 .item-nav {
   a {
     text-decoration: none;
@@ -76,3 +45,67 @@ Sustituido abajo por variables y anidaciones .item-nav a*/
     font-weight: 500;
   }
 }
+
+/*Aqui empiezan las media queries */
+
+@media all and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+
+  .header {
+    &__name-group {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: flex-start;
+      text-align: center;
+      font-weight: 500;
+      opacity: 0.95;
+      z-index: 1;
+    }
+  }
+
+  .menu-nav {
+    background-color: $blue-green;
+    opacity: 0.9;
+
+    .list-nav {
+      justify-content: flex-end;
+      align-items: center;
+      height: 45px;
+    }
+  }
+}
+/*
+@media all and (min-width: 768px) {
+  header {
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header {
+    &__name-group {
+      display: flex;
+      justify-content: flex-start;
+
+      padding: 20px 60px;
+      font-weight: 500;
+      opacity: 0.95;
+      line-height: 30px;
+      z-index: 1;
+    }
+  }
+
+  .menu-nav {
+    background-color: $aqua;
+    opacity: 0.9;
+
+    .list-nav {
+      justify-content: flex-end;
+      align-items: center;
+      height: 60px;
+    }
+  }
+}
+*/
