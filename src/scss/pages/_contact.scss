@@ -6,7 +6,7 @@
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 30px;
+    margin: 30px 15px;
   }
 
   &__description {
@@ -61,5 +61,60 @@
     text-transform: uppercase;
     text-decoration: none;
     appearance: none;
+    width: 100%;
+    margin-top: 30px;
+    @media all and (min-width: 768px) {
+      width: 206px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 278px;
+    }
+  }
+  &__wrap {
+    width: 90%;
+    margin: 0 auto;
+    @media all and (min-width: 768px) {
+      width: 442px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 600px;
+    }
+  }
+}
+
+.contact__input-box::placeholder {
+  padding-left: 10px;
+  color: rgba(184, 184, 185, 0.776);
+}
+
+.contact__input-bigbox::placeholder {
+  padding: 10px;
+  font-family: $fontText;
+  color: rgba(184, 184, 185, 0.776);
+}
+
+.button__container {
+  @media all and (min-width: 768px){
+  display: flex;
+  justify-content: flex-end;
+  }
+}
+
+.mail_tel {
+  @media all and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.mail {
+  @media all and (min-width: 1200px) {
+    width: 395px;
+  }
+}
+
+.tel {
+  @media all and (min-width: 1200px) {
+    width: 160px;
   }
 }

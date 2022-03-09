@@ -13,54 +13,56 @@
 
 <body>
     <include src="./partials/header.html"></include>
-    
+
 
 
 
     <main class="contact">
 
-<div class="wrap">
-        <h2 class="contact__title">Contacto</h2>
-        <p class="contact__description">Si deseas contactar con nosotras, rellena el siguiente formulario con tus datos y nos pondremos en contacto contigo durante las próximas 24 horas. ¡Muchas gracias!</p>
+        <div class="contact__wrap">
+            <h2 class="contact__title">Contacto</h2>
+            <p class="contact__description">Si deseas contactar con nosotras, rellena el siguiente formulario con tus
+                datos y nos pondremos en contacto contigo durante las próximas 24 horas. ¡Muchas gracias!</p>
+            <p class="contact__warning">Todos los campos marcados con <span class="contact__warning-star">*</span> son
+                obligatorios.</p>
+        </div>
 
-        <p class="contact__warning">Todos los campos marcados con <span class="contact__warning-star">*</span> son obligatorios.</p>
-    </div>
 
-        <form action="https://adalab-server-form.herokuapp.com/" method="post">
-
-
-            
-                <div class="contact__input wrap">
+        <div class="contact__wrap">
+            <form action="https://formspree.io/f/moqrwbbg" method="post">
+                <div class="contact__input">
                     <label for="nombre completo">Nombre completo <span class="contact__warning-star">*</span></label>
-                    <input class="contact__input-box" placeholder="Nombre..." id="nombre completo" type="text" name="nombre completo" required />
+                    <input class="contact__input-box" placeholder="Nombre..." id="nombre completo" type="text"
+                        name="nombre completo" required />
                 </div>
-                <div class="contact__input wrap">
-                    <label for="email">Email <span class="contact__warning-star">*</span></label>
-                    <input class="contact__input-box" placeholder="nombre.apellido@mail.com" id="email" type="email" name="email" required />
+                <div class="mail_tel">
+                    <div class="contact__input mail">
+                        <label for="email">Email <span class="contact__warning-star">*</span></label>
+                        <input class="contact__input-box" placeholder="nombre.apellido@mail.com" id="email" type="email"
+                            name="email" required />
+                    </div>
+                    <div class="contact__input tel">
+                        <label for="teléfono">Teléfono</label>
+                        <input class="contact__input-box" placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono"
+                            required />
+                    </div>
                 </div>
-
-                <div class="contact__input wrap">
-                    <label for="teléfono">Teléfono</label>
-                    <input class="contact__input-box" placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono" required />
-                </div>
-
-                <div class="contact__input wrap">
+                <div class="contact__input">
                     <label for="mensajes">Mensaje: <span class="contact__warning-star">*</span></label>
-                    <textarea class="contact__input-bigbox" id="mensajes" name="mensajes" placeholder="¿Qué necesitas?" rows="8" cols="80"></textarea>
+                    <textarea class="contact__input-bigbox" id="mensajes" name="mensajes" placeholder="¿Qué necesitas?"
+                        rows="8" cols="80"></textarea>
                 </div>
-            
+                <div class="button__container">
+                    <input class="contact__button" type="submit" value="Enviar" />
+                </div>
+            </form>
+        </div>
 
-            
-                <div>
-                    <input class="contact__button wrap" type="submit" value="Enviar" />
-                </div>
-            
-        </form>
     </main>
 
 
     <include src="partials/footer.html"></include>
-    
+
 </body>
 
 </html>
