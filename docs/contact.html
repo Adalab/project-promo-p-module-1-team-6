@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+      <div class="header-container">
+      <h1 class="header__name-group">The Walking Coders</h1>
+      <nav class="menu-nav">
+          <ul class="list-nav">
+              <li class="item-nav"><a href="./index.html#team">Equipo</a></li>
+              <li class="item-nav"><a href="./index.html#about-us">Quiénes somos</a></li>
+              <li class="item-nav"><a href="./contact.html">Contacto</a></li>
+          </ul>
+      </nav>
+      </div>
+    </header>
+
+
+
+
+    <main class="contact">
+
+        <div class="contact__wrap">
+            <h2 class="contact__title">Contacto</h2>
+            <p class="contact__description">Si deseas contactar con nosotras, rellena el siguiente formulario con tus
+                datos y nos pondremos en contacto contigo durante las próximas 24 horas. ¡Muchas gracias!</p>
+            <p class="contact__warning">Todos los campos marcados con <span class="contact__warning-star">*</span> son
+                obligatorios.</p>
+        </div>
+
+
+        <div class="contact__wrap">
+            <form action="https://formspree.io/f/moqrwbbg" method="post">
+                <div class="contact__input">
+                    <label for="nombre completo">Nombre completo <span class="contact__warning-star">*</span></label>
+                    <input class="contact__input-box" placeholder="Nombre..." id="nombre completo" type="text"
+                        name="nombre completo" required />
+                </div>
+                <div class="mail_tel">
+                    <div class="contact__input mail">
+                        <label for="email">Email <span class="contact__warning-star">*</span></label>
+                        <input class="contact__input-box" placeholder="nombre.apellido@mail.com" id="email" type="email"
+                            name="email" required />
+                    </div>
+                    <div class="contact__input tel">
+                        <label for="teléfono">Teléfono</label>
+                        <input class="contact__input-box" placeholder="Ej: 123456789" id="teléfono" type="tel" name="teléfono"
+                            required />
+                    </div>
+                </div>
+                <div class="contact__input">
+                    <label for="mensajes">Mensaje: <span class="contact__warning-star">*</span></label>
+                    <textarea class="contact__input-bigbox" id="mensajes" name="mensajes" placeholder="¿Qué necesitas?"
+                        rows="8" cols="80"></textarea>
+                </div>
+                <div class="button__container">
+                    <input class="contact__button" type="submit" value="Enviar" />
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+      <p class="footer__team-name">The Walking Coders &#169 2022</p>
+      <ul class="footer__nav">
+          <li class="footer__nav__item"><a href="./index.html#team">EQUIPO</a></li>
+          <li class="footer__nav__item"><a href="./index.html#about-us">QUIÉNES SOMOS</a></li>
+          <li class="footer__nav__item"><a href="./contact.html">CONTACTO</a></li>
+      </ul>
+      <img class="footer__adalab-photo" src="./assets/images/logo-adalab.png" alt="Logo de Adalab">
+    </footer>
+
+</body>
+
+</html>

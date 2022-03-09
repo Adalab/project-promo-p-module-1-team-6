@@ -1,68 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- link email gema -->
+    <script src="https://kit.fontawesome.com/07310f17cd.js" crossorigin="anonymous"></script>
+    <!-- link email gema -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <title>Proyecto Grupo 6</title>
+</head>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+<body>
+    <!-- HEADER -->
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+    <header class="header">
+      <div class="header-container">
+      <h1 class="header__name-group">The Walking Coders</h1>
+      <nav class="menu-nav">
+          <ul class="list-nav">
+              <li class="item-nav"><a href="./index.html#team">Equipo</a></li>
+              <li class="item-nav"><a href="./index.html#about-us">Quiénes somos</a></li>
+              <li class="item-nav"><a href="./contact.html">Contacto</a></li>
+          </ul>
+      </nav>
+      </div>
+    </header>
 
-          </li>
-        </ul>
-      </main>
+    <!-- MAIN -->
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <main>
+      <span class="lema">
+        <p>Un gran código conlleva una gran responsabilidad.</p>
+      </span>
+      <section id="team" class="team"> <!-- Cambio las clases de team-->
+          <div class="wrap">
 
-        </small>
-      </footer>
+              <article>
+                  <h2 class="team__title">Equipo</h2> <!-- clases cambiadas-->
+                  <p class="team__p-class">El equipo está compuesto por 4 miembros: Tania, Gema, Noelia y Brenda.
+                      Somos un equipo multidisciplinar constituido por profesionales de magisterio, fotografía,
+                      turismo, marketing digital y desarrollo social.
+                      Somos un equipo con cualidades muy diferentes pero es lo que hace que formemos el tandem
+                      perfecto.
+                      Tenemos intereses comunes como los videojuegos, ir a caminar, la naturaleza y nos encantan las
+                      mascotas.
+                      Además, tenemos una meta común que es llegar a convertirnos en programadoras y tener la
+                      oportunidad de introducirnos en el sector tecnológico y poder desarrollarnos y crecer
+                      profesionalmente en él.</p>
+              </article>
+          </div>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+          <article class="grey-background">
+
+              <!-- CUBE -->
+              <div class="diamond-container"> 
+                  <div class="diamond-container__diamond"> <!-- Cambio de clase-->
+
+                  </div>
+              </div>
+              <!-- END OF CUBE -->
+
+              <div class="wrap2"> <!-- Cambio de clase a wrap2-->
+                  <div class="bloq bloq1">
+                        <h3 class="wrap2__sub-title">Fortalezas</h3> <!-- Cambio de clase-->
+                      <p class="wrap2__p-class">La principal fortaleza de nuestro equipo es que somos todas muy empáticas y
+                      siempre tratamos de ponernos en el lugar de las demás. Además, somos muy flexibles y colaborativas.
+                      El éxito de nuestro equipo es que siempre intentamos involucrarnos en la toma de
+                      decisiones y asumir responsabilidades. </p> 
+                  </div>
+
+                  <div class="bloq bloq2">
+                      <h3 class="wrap2__sub-title">Debilidades</h3> <!-- Cambio de clase-->
+                      <p class="wrap2__p-class">Nuestra gran debilidad es la ausencia de confianza ya que todas estamos
+                      trabajando en un entorno totalmente desconocido para nosotras.
+                      Además, somos perfeccionistas y por ello nos frustramos cuando no alcanzamos nuestros objetivos. </p>  
+                  </div>
+                  
+              </div>
+
+          </article>
+      </section>
+      <section id="about-us" class="about-us"> <!-- Cambio las clases de about-us -->
+              <h2 class="about-us__title">Quiénes somos</h2>
+              <div class="wrap">
+              <article class="about-us__member">
+                  <img class="about-us__member-photo photo1" src="./assets/images/FOTO BRENDA ACTUALIZADA.jpg" alt="Foto Brenda">
+                  <div class="member1">
+                      <h3 class="about-us__member-name">Brenda Sánchez</h3>
+                      <p class="about-us__member-text member1__text">
+                          Profesional de Turismo y Marketing Digital. Realicé un Grado en Turismo y un
+                          Máster en Dirección de Marketing Digital & Social Media.
+                          He trabajado en varios hoteles como recepcionista y responsable de marketing y en varias
+                          agencias de viajes y tour operadores como agente de viajes y producto.
+                          También he sido formadora de hoteles en varios departamentos y he trabajado en una agencia de
+                          comunicación como Social Media & Community Manager.
+                          Mi gran pasión es viajar, conocer diferentes culturas y las redes sociales. Una de mis metas es
+                          llegar a ser programadora. Creo que la combinación de programación con mis estudios de marketing
+                          digital pueden abrirme muchas puertas para poder crecer profesionalmente en el sector
+                          tecnológico.</p>
+                      <ul class="social-nav">
+                          <li><a class="social-nav__link" href="https://www.linkedin.com/in/brendasanlop/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                          <li>·<a class="social-nav__link" href="https://github.com/brendasanlop" target="_blank"><i class="fa-brands fa-github-alt social-nav__icon"></i></a></li>
+                          <li>·<a class="social-nav__link" href="mailto:brendacapri25@gmail.com" target="_blank"><i class="fa-solid fa-envelope social-nav__icon"></i></a></li>
+                      </ul>
+                  </div>
+              </article>
+              <article class="about-us__member member2">
+                  <img class="about-us__member-photo" src="./assets/images/foto-gema.jpg" alt="Foto Gema">
+                  <div class="member2__div">
+                      <h3 class="about-us__member-name">Gema Mesas</h3>
+                      <p class="about-us__member-text member2__div--text">En febrero de 2022 he iniciado mi carrera como Desarrolladora Frontend en el
+                          bootcamp de programación de Adalab. Desde pequeña siempre me han gustado los ordenadores y la
+                          tecnología y he cacharreado con todo, aunque nunca me hubiera imaginado que acabaría pudiendo
+                          trabajar en algo relacionado con ello. ¡Mis motivaciones son aprender al máximo y poder
+                          desarrollar mi creatividad! Tengo muchas ganas de avanzar y enfrentarme a nuevos retos.</p>
+                      <ul class="social-nav">
+                          <li><a class="social-nav__link" href="https://www.linkedin.com/mwlite/in/gema-mesas-vel%C3%A1zquez-80a06b180" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                          <li>·<a class="social-nav__link" href="https://github.com/GemaMesasV" target="_blank"><i class="fa-brands fa-github-alt social-nav__icon"></i></a></li>
+                          <li>·<a class="social-nav__link" href="mailto:gema.Mesas.v@gmail.com" target="_blank"><i class="fa-solid fa-envelope social-nav__icon"></i></a></li>
+                      </ul>
+                  </div>
+              </article>
+              <article class="about-us__member">
+                  <img class="about-us__member-photo" src="./assets/images/foto-noelia.jpg" alt="Foto de Noelia">
+                  <div class="member1">
+                      <h3 class="about-us__member-name">Noelia Romero</h3>
+                      <p class="about-us__member-text member1__text">Siempre me ha gustado aplicar la tecnología a mi trabajo, por lo que estaba
+                          buscado una nueva metodología que me permitiese conocer en profundidad este campo. Por ello,
+                          decidí empezar esta nueva aventura como Desarrolladora Front-End, con muchísima motivación e
+                          ilusión de reinventar mi vida profesional. ¡Nunca he tenido miedo de empezar de cero! </p>
+                      <ul class="social-nav">
+                          <li><a class="social-nav__link" href="https://www.linkedin.com/in/noeliaromerogarcia/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                          <li>·<a class="social-nav__link" href="https://github.com/romerogarcia"target="_blank"><i class="fa-brands fa-github-alt social-nav__icon"></i></a></li>
+                          <li>·<a class="social-nav__link" href="mailto:noeliaromga@gmail.com"target="_blank"><i class="fa-solid fa-envelope social-nav__icon"></i></a></li>
+                      </ul>
+                  </div>
+
+              </article>
+
+              <article class="about-us__member member2">
+                  <img class="about-us__member-photo" src="./assets/images/foto-tania.jpg" alt="Foto de Tania">
+                  <div class="member2__div">
+                      <h3 class="about-us__member-name">Tania Fernández</h3>
+                      <p class="about-us__member-text member2__div--text">Partiendo desde el mundo de la fotografía y habiendo hecho mis pinitos en la
+                          animación tradicional, una mezcla entre curiosidad y necesidad de mejorar mi futuro laboral han
+                          ido acercándome de salto en salto al campo tecnológico, donde a partir de ahora espero crecer
+                          cada día como futura programadora.</p>
+                      <ul class="social-nav">
+                          <li><a class="social-nav__link" href="https://www.linkedin.com/in/tania-fern%C3%A1ndez-de-soto-esteban-8b232a232/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                          <li>·<a class="social-nav__link" href="https://github.com/tanferest" target="_blank"><i class="fa-brands fa-github-alt social-nav__icon"></i></a>
+                          </li>
+                          <li>·<a class="social-nav__link" href="mailto:tanferest@gmail.com" target="_blank"><i class="fa-solid fa-envelope social-nav__icon"></i></a></li>
+                      </ul>
+                  </div>
+              </article>
+          </div>
+      </section>
+    </main>
+
+    
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <p class="footer__team-name">The Walking Coders &#169 2022</p>
+      <ul class="footer__nav">
+          <li class="footer__nav__item"><a href="./index.html#team">EQUIPO</a></li>
+          <li class="footer__nav__item"><a href="./index.html#about-us">QUIÉNES SOMOS</a></li>
+          <li class="footer__nav__item"><a href="./contact.html">CONTACTO</a></li>
+      </ul>
+      <img class="footer__adalab-photo" src="./assets/images/logo-adalab.png" alt="Logo de Adalab">
+    </footer>
+    
+</body>
+
 </html>
