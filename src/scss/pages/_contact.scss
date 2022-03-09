@@ -51,16 +51,15 @@
       border: 1px solid #b8b8b9;
     }
   }
-}
-
-.button {
-  background-color: $blue-green;
-  font-family: $fontText;
-  color: $textHeader;
-  height: 45px;
-  border-radius: 4px;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  appearance: none;
+  &__button {
+    background-color: $blue-green;
+    font-family: $fontText;
+    color: $textHeader;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    appearance: none;
+  }
 }

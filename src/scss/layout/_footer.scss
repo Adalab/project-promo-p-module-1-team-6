@@ -1,28 +1,51 @@
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-top: 1px solid rgba(184, 184, 185, 1);
   padding-bottom: 45px;
   box-sizing: content-box;
   margin-top: 45px;
   padding-top: 30px;
-
+  height: 170px;
   &__team-name {
     font-size: 14px;
     text-align: center;
     color: rgba(184, 184, 185, 1);
     padding-top: 30px;
+    @media all and (min-width: 768px) {
+      position: absolute;
+      top: 30px;
+      left: 45px;
+      padding: 0;
+    }
+    @media all and (min-width: 1200px) {
+      position: absolute;
+      top: 30px;
+      left: 138px;
+      padding: 0;
+    }
   }
 
   &__nav {
     list-style: none;
     text-align: center;
-    padding: 30px;
     font-size: 14px;
     font-weight: 600;
-
+    padding: 30px;
+    @media all and (min-width: 768px) {
+      position: absolute;
+      top: 24px;
+      right: 45px;
+      padding: 0;
+    }
+    @media all and (min-width: 1200px) {
+      position: absolute;
+      top: 24px;
+      right: 138px;
+      padding: 0;
+    }
     &__item a {
       text-decoration: none;
       color: $color-text;
@@ -35,8 +58,24 @@
   &__adalab-photo {
     width: 116px;
     height: 45px;
+    @media all and (min-width: 768px) {
+      position: absolute;
+      top: 65px;
+      bottom: 60px;
+      left: 45px;
+    }
+    @media all and (min-width: 1200px) {
+      position: absolute;
+      top: 65px;
+      bottom: 60px;
+      left: 138px;
+    }
   }
 }
 
+@media all and (min-width: 768px) {
 
+}
+@media all and (min-width: 1200px) {
 
+}
