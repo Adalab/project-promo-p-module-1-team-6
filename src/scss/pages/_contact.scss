@@ -1,3 +1,15 @@
+.header_contact {
+  background-image: url(../images/contact_1.jpg);
+  background-position: center;
+  background-size: cover;
+  @media all and (min-width:768px) {
+    background-image: url(../images/contact_2.jpg);
+  }
+  @media all and (min-width: 1200px) {
+    background-image: url(../images/contact_3.jpg);
+  }
+}
+
 .contact {
   &__title {
     color: $blue-green;

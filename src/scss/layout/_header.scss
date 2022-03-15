@@ -3,8 +3,9 @@
   font-family: $fontText;
   color: $textHeader;
   overflow: hidden;
-  background-image: $headerImage;
+  background-image: url(../images/home_1.jpg);
   background-size: cover;
+  background-position: center;
   background-position-y: 25%;
 
   &__name-group {
