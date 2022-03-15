@@ -7,7 +7,7 @@
   align-items: center;
 
   &__title {
-    color: $aqua;
+    color: $lightMain;
     text-align: center;
     font-size: 24px;
     font-family: "Rubik", sans-serif;
@@ -25,9 +25,10 @@
 }
 
 .wrap2 {
+  padding: 0 15px;
   &__sub-title {
     text-align: center;
-    color: $blue-green;
+    color: $mainColor;
     font-family: "Rubik", sans-serif;
     font-size: 22px;
     height: 45px;
@@ -68,7 +69,7 @@
 }
 
 .about-us-title {
-  color: $blue-green;
+  color: $mainColor;
 }
 
 .grey-background {

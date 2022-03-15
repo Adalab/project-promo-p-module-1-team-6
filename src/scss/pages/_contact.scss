@@ -12,7 +12,7 @@
 
 .contact {
   &__title {
-    color: $blue-green;
+    color: $mainColor;
     text-align: center;
     font-size: 24px;
     font-family: "Rubik", sans-serif;
@@ -35,7 +35,7 @@
     margin-bottom: 30px;
 
     &-star {
-      color: $aqua;
+      color: $lightMain;
     }
   }
   &__input {
@@ -53,18 +53,20 @@
       margin-bottom: 3.5px;
       height: 45px;
       border: 1px solid #b8b8b9;
+      padding: 10px;
     }
     &-bigbox {
       width: 100%;
       margin-top: 3.5px;
       margin-bottom: 3.5px;
       height: 105px;
-
+      padding: 10px;
       border: 1px solid #b8b8b9;
+      font-family: $fontText;
     }
   }
   &__button {
-    background-color: $blue-green;
+    background-color: $mainColor;
     font-family: $fontText;
     color: $textHeader;
     height: 45px;
@@ -75,11 +77,15 @@
     appearance: none;
     width: 100%;
     margin-top: 30px;
+    transition: background-color 0.5s;
     @media all and (min-width: 768px) {
       width: 206px;
     }
     @media all and (min-width: 1200px) {
       width: 278px;
+    }
+    &:hover {
+      background-color: $secondColor;
     }
   }
   &__wrap {
@@ -95,13 +101,10 @@
 }
 
 .contact__input-box::placeholder {
-  padding-left: 10px;
   color: rgba(184, 184, 185, 0.776);
 }
 
 .contact__input-bigbox::placeholder {
-  padding: 10px;
-  font-family: $fontText;
   color: rgba(184, 184, 185, 0.776);
 }
 

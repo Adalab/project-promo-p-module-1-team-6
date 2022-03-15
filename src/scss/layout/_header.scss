@@ -9,7 +9,7 @@
   background-position-y: 25%;
 
   &__name-group {
-    background-color: $blue-green;
+    background-color: $mainColor;
     height: 60px;
     font-size: 16px;
     line-height: 30px;
@@ -23,7 +23,7 @@
 }
 
 .menu-nav {
-  background-color: $aqua;
+  background-color: $lightMain;
   opacity: 0.9;
 
   .list-nav {
@@ -43,6 +43,10 @@
     font-family: $fontText;
     font-size: 15px;
     font-weight: 500;
+    transition: text-decoration 0.5s;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -56,11 +60,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: $blue-green;
+    background-color: $mainColor;
     align-items: center;
   }
   .menu-nav {
-    background-color: $blue-green;
+    background-color: $mainColor;
     opacity: 0.9;
     margin-right: 45px;
 

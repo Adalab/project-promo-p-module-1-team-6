@@ -7,10 +7,10 @@
 /* GLOBAL */
 
 :root {
-  --blue-green: #099d8d;
+  --mainColor: #099d8d;
   --black: #000000;
   --cool-grey: rgba(184, 184, 185, 0.205);
-  --aqua: #14d9c4;
+  --lightMain: #14d9c4;
   --color-text: #54585a;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -34,7 +34,7 @@
 }
 
 .name-group {
-  background-color: var(--blue-green);
+  background-color: var(--mainColor);
   height: 60px;
   font-size: 16px;
   padding: 20px 60px;
@@ -46,7 +46,7 @@
 }
 
 .menu-nav {
-  background-color: var(--aqua);
+  background-color: var(--lightMain);
   opacity: 0.9;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .team-title {
-  color: var(--aqua);
+  color: var(--lightMain);
   text-align: center;
   font-size: 24px;
   font-family: "Rubik", sans-serif;
@@ -119,14 +119,14 @@
 
 .sub-title {
   text-align: center;
-  color: var(--blue-green);
+  color: var(--mainColor);
   font-family: "Rubik", sans-serif;
   font-size: 22px;
   height: 45px;
 }
 
 .about-us-title {
-  color: var(--blue-green);
+  color: var(--mainColor);
 }
 
 .grey-background {
@@ -195,7 +195,7 @@
   list-style: none;
   width: 124px;
   margin-bottom: 45px;
-  color: var(--blue-green);
+  color: var(--mainColor);
 }
 
 .social-icon {
@@ -204,7 +204,7 @@
 
 .social-nav-link {
   text-decoration: none;
-  color: var(--blue-green);
+  color: var(--mainColor);
 }
 
 /* FOOTER */
