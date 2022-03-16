@@ -29,6 +29,7 @@
   }
 
   &__nav {
+    opacity: 0.80;
     list-style: none;
     text-align: center;
     font-size: 14px;
@@ -39,12 +40,16 @@
       top: 24px;
       right: 45px;
       padding: 0;
+      top: 50%;
+      transform: translateY(-60%);
     }
     @media all and (min-width: 1200px) {
       position: absolute;
       top: 24px;
       right: 138px;
       padding: 0;
+      top: 50%;
+      transform: translateY(-60%);
     }
     &__item a {
       text-decoration: none;
