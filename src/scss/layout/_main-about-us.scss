@@ -94,10 +94,7 @@
 }
 .photo1 {
   @media all and (min-width: 768px) {
-    transform: translateY(-25%);
-  }
-  @media all and (min-width: 1200px) {
-    transform: translateY(-20%);
+    transform: translateY(-15%);
   }
 }
 
