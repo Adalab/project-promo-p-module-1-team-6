@@ -4,6 +4,7 @@
     text-align: center;
     font-weight: 600;
     font-size: 18px;
+    opacity: 0.8;
     // PARA CENTRAR EL LEMA HE CAMBIADO TRANSFORM TRANSLATEY(-50%) A LAS SIGUIENTES 4 LINEAS DE CÓDIGO Y LE HE QUITADO EL MARGIN 0 15PX QUE HABÍAMOS PUESTO
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -13,4 +14,8 @@
     background-color: #ffffff;
     // margin: 0 15px;
     padding: 5px;
+
+    @media all and (min-width: 768px) {
+      left: 25%;
+    }
   }
